@@ -1,0 +1,45 @@
+t=2020-08-29T15:26:21+0800 lvl=info msg="Starting Grafana" logger=server version=7.1.5 commit=9893b8c53d branch=HEAD compiled=2020-08-25T16:27:17+0800
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config loaded from" logger=settings file=/usr/share/grafana/conf/defaults.ini
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config loaded from" logger=settings file=/etc/grafana/grafana.ini
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.data=/var/lib/grafana"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.logs=/var/log/grafana"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.plugins=/var/lib/grafana/plugins"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.provisioning=/etc/grafana/provisioning"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.log.mode=console"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_DATA=/var/lib/grafana"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_LOGS=/var/log/grafana"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PLUGINS=/var/lib/grafana/plugins"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PROVISIONING=/etc/grafana/provisioning"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_ENABLED=true"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_HOST=smtp.gmail.com:465"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_USER=xxxx@gmail.com"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_PASSWORD=*********"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_SKIP_VERIFY=true"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_FROM_ADDRESS=xxxx@gmail.com"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_FROM_NAME=Grafana"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_LOG_FILTERS=rendering:debug"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_RENDERING_SERVER_URL=http://grafana-image:8081/render"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_RENDERING_CALLBACK_URL=http://grafana:3000/"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Path Home" logger=settings path=/usr/share/grafana
+t=2020-08-29T15:26:21+0800 lvl=info msg="Path Data" logger=settings path=/var/lib/grafana
+t=2020-08-29T15:26:21+0800 lvl=info msg="Path Logs" logger=settings path=/var/log/grafana
+t=2020-08-29T15:26:21+0800 lvl=info msg="Path Plugins" logger=settings path=/var/lib/grafana/plugins
+t=2020-08-29T15:26:21+0800 lvl=info msg="Path Provisioning" logger=settings path=/etc/grafana/provisioning
+t=2020-08-29T15:26:21+0800 lvl=info msg="App mode production" logger=settings
+t=2020-08-29T15:26:21+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2020-08-29T15:26:21+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2020-08-29T15:26:21+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2020-08-29T15:26:21+0800 lvl=info msg="Registering plugin" logger=plugins name="Direct Input"
+t=2020-08-29T15:26:21+0800 lvl=eror msg="can't read datasource provisioning files from directory" logger=provisioning.datasources path=/etc/grafana/provisioning/datasources error="open /etc/grafana/provisioning/datasources: no such file or directory"
+t=2020-08-29T15:26:21+0800 lvl=eror msg="Failed to read plugin provisioning files from directory" logger=provisioning.plugins path=/etc/grafana/provisioning/plugins error="open /etc/grafana/provisioning/plugins: no such file or directory"
+t=2020-08-29T15:26:21+0800 lvl=eror msg="Can't read alert notification provisioning files from directory" logger=provisioning.notifiers path=/etc/grafana/provisioning/notifiers error="open /etc/grafana/provisioning/notifiers: no such file or directory"
+t=2020-08-29T15:26:21+0800 lvl=info msg="Backend rendering via external http server" logger=rendering renderer=http
+t=2020-08-29T15:26:21+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=[::]:3000 protocol=http subUrl= socket=
+t=2020-08-29T15:26:21+0800 lvl=eror msg="can't read dashboard provisioning files from directory" logger=provisioning.dashboard path=/etc/grafana/provisioning/dashboards error="open /etc/grafana/provisioning/dashboards: no such file or directory"
+t=2020-08-29T16:49:12+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=400 remote_addr=172.18.0.1 time_ms=1 size=77 referer="http://localhost:3000/dashboard/new?editPanel=2&orgId=1"
+t=2020-08-29T16:49:12+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=400 remote_addr=172.18.0.1 time_ms=0 size=77 referer="http://localhost:3000/dashboard/new?editPanel=2&orgId=1"
+t=2020-08-29T16:49:17+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=400 remote_addr=172.18.0.1 time_ms=1 size=77 referer="http://localhost:3000/dashboard/new?editPanel=2&orgId=1"
+t=2020-08-29T16:49:39+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=400 remote_addr=172.18.0.1 time_ms=1 size=77 referer="http://localhost:3000/dashboard/new?editPanel=2&orgId=1"
+t=2020-08-29T16:49:39+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=400 remote_addr=172.18.0.1 time_ms=0 size=77 referer="http://localhost:3000/dashboard/new?editPanel=2&orgId=1"
+t=2020-08-29T16:53:21+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=400 remote_addr=172.18.0.1 time_ms=1 size=77 referer="http://localhost:3000/dashboard/new?tab=query&editPanel=2&orgId=1"
+t=2020-08-29T16:53:24+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/query status=400 remote_addr=172.18.0.1 time_ms=0 size=77 referer="http://localhost:3000/dashboard/new?tab=query&editPanel=2&orgId=1"

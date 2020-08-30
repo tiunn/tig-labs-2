@@ -12,3 +12,4 @@
 2020-08-29T07:41:19Z I! Loaded outputs: influxdb
 2020-08-29T07:41:19Z I! Tags enabled: host=6a949b9ea3c9
 2020-08-29T07:41:19Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"6a949b9ea3c9", Flush Interval:10s
+2020-08-29T22:25:10Z W! [inputs.snmp] Collection took longer than expected; not complete after interval of 10s
