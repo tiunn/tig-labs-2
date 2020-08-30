@@ -13,3 +13,34 @@
 2020-08-29T07:41:19Z I! Tags enabled: host=6a949b9ea3c9
 2020-08-29T07:41:19Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"6a949b9ea3c9", Flush Interval:10s
 2020-08-29T22:25:10Z W! [inputs.snmp] Collection took longer than expected; not complete after interval of 10s
+2020-08-30T02:17:47Z I! Loaded inputs: kernel net system disk mem net_response ping processes swap cpu snmp
+2020-08-30T02:17:47Z I! Loaded aggregators: 
+2020-08-30T02:17:47Z I! Loaded processors: 
+2020-08-30T02:17:47Z I! Loaded outputs: influxdb
+2020-08-30T02:17:47Z I! Tags enabled: host=6a949b9ea3c9
+2020-08-30T02:17:47Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"6a949b9ea3c9", Flush Interval:10s
+2020-08-30T02:17:47Z W! [outputs.influxdb] When writing to [http://influxdb:8086]: database "telegraf" creation failed: Post "http://influxdb:8086/query": dial tcp 172.18.0.5:8086: connect: connection refused
+2020-08-30T02:20:20Z I! [agent] Hang on, flushing any cached metrics before shutdown
+2020-08-30T02:23:26Z I! Loaded inputs: net net_response ping system cpu disk processes swap kernel mem snmp
+2020-08-30T02:23:26Z I! Loaded aggregators: 
+2020-08-30T02:23:26Z I! Loaded processors: 
+2020-08-30T02:23:26Z I! Loaded outputs: influxdb
+2020-08-30T02:23:26Z I! Tags enabled: host=6a949b9ea3c9
+2020-08-30T02:23:26Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"6a949b9ea3c9", Flush Interval:10s
+2020-08-30T02:23:26Z W! [outputs.influxdb] When writing to [http://influxdb:8086]: database "telegraf" creation failed: Post "http://influxdb:8086/query": dial tcp 172.18.0.3:8086: connect: connection refused
+2020-08-30T03:22:50Z I! [agent] Hang on, flushing any cached metrics before shutdown
+2020-08-30T03:22:59Z I! Loaded inputs: kernel mem ping processes swap system cpu disk net net_response snmp
+2020-08-30T03:22:59Z I! Loaded aggregators: 
+2020-08-30T03:22:59Z I! Loaded processors: 
+2020-08-30T03:22:59Z I! Loaded outputs: influxdb
+2020-08-30T03:22:59Z I! Tags enabled: host=6a949b9ea3c9
+2020-08-30T03:22:59Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"6a949b9ea3c9", Flush Interval:10s
+2020-08-30T03:22:59Z W! [outputs.influxdb] When writing to [http://influxdb:8086]: database "telegraf" creation failed: Post "http://influxdb:8086/query": dial tcp 172.18.0.3:8086: connect: connection refused
+2020-08-30T03:26:24Z I! [agent] Hang on, flushing any cached metrics before shutdown
+2020-08-30T03:26:28Z I! Loaded inputs: processes system disk mem net ping cpu kernel net_response swap snmp
+2020-08-30T03:26:28Z I! Loaded aggregators: 
+2020-08-30T03:26:28Z I! Loaded processors: 
+2020-08-30T03:26:28Z I! Loaded outputs: influxdb
+2020-08-30T03:26:28Z I! Tags enabled: host=6a949b9ea3c9
+2020-08-30T03:26:28Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"6a949b9ea3c9", Flush Interval:10s
+2020-08-30T03:26:28Z W! [outputs.influxdb] When writing to [http://influxdb:8086]: database "telegraf" creation failed: Post "http://influxdb:8086/query": dial tcp 172.18.0.3:8086: connect: connection refused

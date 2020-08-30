@@ -1,2 +1,1 @@
-log/telegraf/*.log
-log/grafana/*.log
+*.log
