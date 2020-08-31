@@ -57,6 +57,7 @@ services:
             GF_SMTP_FROM_ADDRESS: xxxx@gmail.com
             GF_SMTP_FROM_NAME: Grafana
             GF_SMTP_EHLO_IDENTITY:
+            GF_EXTERNAL_IMAGE_STORAGE_PROVIDER: local
     grafana-image:
         container_name: grafana-image
         image: grafana/grafana-image-renderer:latest
