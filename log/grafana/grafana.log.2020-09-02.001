@@ -1,0 +1,226 @@
+t=2020-09-01T00:00:02+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=ok prev state=alerting
+t=2020-09-01T00:00:52+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=pending prev state=ok
+t=2020-09-01T00:01:12+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=alerting prev state=pending
+t=2020-09-01T00:01:12+0800 lvl=info msg=Rendering logger=rendering renderer=http path="d-solo/9FQBljNMz/home-switches?orgId=1&panelId=12"
+t=2020-09-01T00:01:13+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:01:13+0800 lvl=info msg="Creating Line notify" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:01:14+0800 lvl=eror msg="Failed to send notification to LINE" logger=alerting.notifier.line error="Webhook response status 400 " body="CPU Utilization alert - http://localhost:3000/d/9FQBljNMz/home-switches?tab=alert&editPanel=12&orgId=1\n"
+t=2020-09-01T00:01:14+0800 lvl=eror msg="failed to send notification" logger=alerting.notifier uid=2fiDhkvGz error="Webhook response status 400 "
+t=2020-09-01T00:01:14+0800 lvl=eror msg="failed to send notification" logger=alerting.notifier uid=2fiDhkvGz error="Webhook response status 400 "
+t=2020-09-01T00:02:07+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=0 notification=LINE
+t=2020-09-01T00:02:07+0800 lvl=info msg="Creating Line notify" logger=alerting.notifier.line ruleId=0 notification=LINE
+t=2020-09-01T00:02:28+0800 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Stopped Stream Manager"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Starting Grafana" logger=server version=7.1.5 commit=9893b8c53d branch=HEAD compiled=2020-08-25T16:27:17+0800
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config loaded from" logger=settings file=/usr/share/grafana/conf/defaults.ini
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config loaded from" logger=settings file=/etc/grafana/grafana.ini
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.data=/var/lib/grafana"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.logs=/var/log/grafana"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.plugins=/var/lib/grafana/plugins"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.provisioning=/etc/grafana/provisioning"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.log.mode=console"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_DATA=/var/lib/grafana"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_LOGS=/var/log/grafana"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PLUGINS=/var/lib/grafana/plugins"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PROVISIONING=/etc/grafana/provisioning"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_ENABLED=true"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_HOST=smtp.gmail.com:465"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_USER=xxxxx@gmail.com"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_PASSWORD=*********"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_SKIP_VERIFY=true"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_FROM_ADDRESS=xxxx@gmail.com"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_FROM_NAME=Grafana"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_RENDERING_SERVER_URL=http://grafana-image:8081/render"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_RENDERING_CALLBACK_URL=http://grafana:3000/"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Path Home" logger=settings path=/usr/share/grafana
+t=2020-09-01T00:02:28+0800 lvl=info msg="Path Data" logger=settings path=/var/lib/grafana
+t=2020-09-01T00:02:28+0800 lvl=info msg="Path Logs" logger=settings path=/var/log/grafana
+t=2020-09-01T00:02:28+0800 lvl=info msg="Path Plugins" logger=settings path=/var/lib/grafana/plugins
+t=2020-09-01T00:02:28+0800 lvl=info msg="Path Provisioning" logger=settings path=/etc/grafana/provisioning
+t=2020-09-01T00:02:28+0800 lvl=info msg="App mode production" logger=settings
+t=2020-09-01T00:02:28+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2020-09-01T00:02:28+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2020-09-01T00:02:28+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2020-09-01T00:02:28+0800 lvl=info msg="Registering plugin" logger=plugins name="Direct Input"
+t=2020-09-01T00:02:28+0800 lvl=info msg="Registering plugin" logger=plugins name=Clock
+t=2020-09-01T00:02:29+0800 lvl=info msg="Registering plugin" logger=plugins name="Google Sheets"
+t=2020-09-01T00:02:29+0800 lvl=eror msg="can't read datasource provisioning files from directory" logger=provisioning.datasources path=/etc/grafana/provisioning/datasources error="open /etc/grafana/provisioning/datasources: no such file or directory"
+t=2020-09-01T00:02:29+0800 lvl=eror msg="Failed to read plugin provisioning files from directory" logger=provisioning.plugins path=/etc/grafana/provisioning/plugins error="open /etc/grafana/provisioning/plugins: no such file or directory"
+t=2020-09-01T00:02:29+0800 lvl=eror msg="Can't read alert notification provisioning files from directory" logger=provisioning.notifiers path=/etc/grafana/provisioning/notifiers error="open /etc/grafana/provisioning/notifiers: no such file or directory"
+t=2020-09-01T00:02:29+0800 lvl=eror msg="can't read dashboard provisioning files from directory" logger=provisioning.dashboard path=/etc/grafana/provisioning/dashboards error="open /etc/grafana/provisioning/dashboards: no such file or directory"
+t=2020-09-01T00:02:29+0800 lvl=info msg="Backend rendering via external http server" logger=rendering renderer=http
+t=2020-09-01T00:02:29+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=[::]:3000 protocol=http subUrl= socket=
+t=2020-09-01T00:02:29+0800 lvl=info msg=Profiler logger=plugins.backend pluginId=grafana-googlesheets-datasource enabled=false
+t=2020-09-01T00:02:33+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=0 notification=LINE
+t=2020-09-01T00:02:33+0800 lvl=info msg="Creating Line notify" logger=alerting.notifier.line ruleId=0 notification=LINE
+t=2020-09-01T00:03:01+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=ok prev state=alerting
+t=2020-09-01T00:03:01+0800 lvl=info msg=Rendering logger=rendering renderer=http path="d-solo/9FQBljNMz/home-switches?orgId=1&panelId=12"
+t=2020-09-01T00:03:03+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:03:07+0800 lvl=eror msg="Metric request error" logger=context userId=1 orgId=1 uname=admin error="rpc error: code = Canceled desc = context canceled" remote_addr=219.68.157.45
+t=2020-09-01T00:03:07+0800 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/ds/query status=500 remote_addr=219.68.157.45 time_ms=588 size=34 referer="https://tunnels.hlchang.com:3333/d/9FQBljNMz/home-switches?orgId=1&refresh=10s"
+t=2020-09-01T00:04:01+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=pending prev state=ok
+t=2020-09-01T00:04:21+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=alerting prev state=pending
+t=2020-09-01T00:04:21+0800 lvl=info msg=Rendering logger=rendering renderer=http path="d-solo/9FQBljNMz/home-switches?orgId=1&panelId=12"
+t=2020-09-01T00:04:23+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:04:23+0800 lvl=info msg="Creating Line notify" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:05:30+0800 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+t=2020-09-01T00:05:30+0800 lvl=info msg="Stopped Stream Manager"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Starting Grafana" logger=server version=7.1.5 commit=9893b8c53d branch=HEAD compiled=2020-08-25T16:27:17+0800
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config loaded from" logger=settings file=/usr/share/grafana/conf/defaults.ini
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config loaded from" logger=settings file=/etc/grafana/grafana.ini
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.data=/var/lib/grafana"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.logs=/var/log/grafana"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.plugins=/var/lib/grafana/plugins"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.provisioning=/etc/grafana/provisioning"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.log.mode=console"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_DATA=/var/lib/grafana"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_LOGS=/var/log/grafana"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PLUGINS=/var/lib/grafana/plugins"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PROVISIONING=/etc/grafana/provisioning"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_ENABLED=true"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_HOST=smtp.gmail.com:465"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_USER=xxxxx@gmail.com"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_PASSWORD=*********"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_SKIP_VERIFY=true"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_FROM_ADDRESS=xxxx@gmail.com"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_FROM_NAME=Grafana"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_RENDERING_SERVER_URL=http://grafana-image:8081/render"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_RENDERING_CALLBACK_URL=http://grafana:3000/"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Path Home" logger=settings path=/usr/share/grafana
+t=2020-09-01T00:05:31+0800 lvl=info msg="Path Data" logger=settings path=/var/lib/grafana
+t=2020-09-01T00:05:31+0800 lvl=info msg="Path Logs" logger=settings path=/var/log/grafana
+t=2020-09-01T00:05:31+0800 lvl=info msg="Path Plugins" logger=settings path=/var/lib/grafana/plugins
+t=2020-09-01T00:05:31+0800 lvl=info msg="Path Provisioning" logger=settings path=/etc/grafana/provisioning
+t=2020-09-01T00:05:31+0800 lvl=info msg="App mode production" logger=settings
+t=2020-09-01T00:05:31+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2020-09-01T00:05:31+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2020-09-01T00:05:31+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2020-09-01T00:05:31+0800 lvl=info msg="Registering plugin" logger=plugins name="Direct Input"
+t=2020-09-01T00:05:31+0800 lvl=info msg="Registering plugin" logger=plugins name=Clock
+t=2020-09-01T00:05:31+0800 lvl=info msg="Registering plugin" logger=plugins name="Google Sheets"
+t=2020-09-01T00:05:31+0800 lvl=eror msg="can't read datasource provisioning files from directory" logger=provisioning.datasources path=/etc/grafana/provisioning/datasources error="open /etc/grafana/provisioning/datasources: no such file or directory"
+t=2020-09-01T00:05:31+0800 lvl=eror msg="Failed to read plugin provisioning files from directory" logger=provisioning.plugins path=/etc/grafana/provisioning/plugins error="open /etc/grafana/provisioning/plugins: no such file or directory"
+t=2020-09-01T00:05:31+0800 lvl=eror msg="Can't read alert notification provisioning files from directory" logger=provisioning.notifiers path=/etc/grafana/provisioning/notifiers error="open /etc/grafana/provisioning/notifiers: no such file or directory"
+t=2020-09-01T00:05:31+0800 lvl=eror msg="can't read dashboard provisioning files from directory" logger=provisioning.dashboard path=/etc/grafana/provisioning/dashboards error="open /etc/grafana/provisioning/dashboards: no such file or directory"
+t=2020-09-01T00:05:31+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=[::]:3000 protocol=http subUrl= socket=
+t=2020-09-01T00:05:31+0800 lvl=info msg="Backend rendering via external http server" logger=rendering renderer=http
+t=2020-09-01T00:05:31+0800 lvl=info msg=Profiler logger=plugins.backend pluginId=grafana-googlesheets-datasource enabled=false
+t=2020-09-01T00:06:01+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=ok prev state=alerting
+t=2020-09-01T00:06:01+0800 lvl=info msg=Rendering logger=rendering renderer=http path="d-solo/9FQBljNMz/home-switches?orgId=1&panelId=12"
+t=2020-09-01T00:06:04+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:07:21+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=pending prev state=ok
+t=2020-09-01T00:07:41+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=alerting prev state=pending
+t=2020-09-01T00:07:41+0800 lvl=info msg=Rendering logger=rendering renderer=http path="d-solo/9FQBljNMz/home-switches?orgId=1&panelId=12"
+t=2020-09-01T00:07:43+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:07:43+0800 lvl=info msg="Creating Line notify" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:08:38+0800 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Stopped Stream Manager"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Starting Grafana" logger=server version=7.1.5 commit=9893b8c53d branch=HEAD compiled=2020-08-25T16:27:17+0800
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config loaded from" logger=settings file=/usr/share/grafana/conf/defaults.ini
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config loaded from" logger=settings file=/etc/grafana/grafana.ini
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.data=/var/lib/grafana"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.logs=/var/log/grafana"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.plugins=/var/lib/grafana/plugins"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.provisioning=/etc/grafana/provisioning"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from command line" logger=settings arg="default.log.mode=console"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_DATA=/var/lib/grafana"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_LOGS=/var/log/grafana"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PLUGINS=/var/lib/grafana/plugins"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PROVISIONING=/etc/grafana/provisioning"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_ENABLED=true"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_HOST=smtp.gmail.com:465"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_USER=xxxxx@gmail.com"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_PASSWORD=*********"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_SKIP_VERIFY=true"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_FROM_ADDRESS=xxxx@gmail.com"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_SMTP_FROM_NAME=Grafana"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_RENDERING_SERVER_URL=http://grafana-image:8081/render"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_RENDERING_CALLBACK_URL=http://grafana:3000/"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Path Home" logger=settings path=/usr/share/grafana
+t=2020-09-01T00:08:38+0800 lvl=info msg="Path Data" logger=settings path=/var/lib/grafana
+t=2020-09-01T00:08:38+0800 lvl=info msg="Path Logs" logger=settings path=/var/log/grafana
+t=2020-09-01T00:08:38+0800 lvl=info msg="Path Plugins" logger=settings path=/var/lib/grafana/plugins
+t=2020-09-01T00:08:38+0800 lvl=info msg="Path Provisioning" logger=settings path=/etc/grafana/provisioning
+t=2020-09-01T00:08:38+0800 lvl=info msg="App mode production" logger=settings
+t=2020-09-01T00:08:38+0800 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2020-09-01T00:08:38+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2020-09-01T00:08:38+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2020-09-01T00:08:38+0800 lvl=info msg="Registering plugin" logger=plugins name="Direct Input"
+t=2020-09-01T00:08:38+0800 lvl=info msg="Registering plugin" logger=plugins name=Clock
+t=2020-09-01T00:08:38+0800 lvl=info msg="Registering plugin" logger=plugins name="Google Sheets"
+t=2020-09-01T00:08:39+0800 lvl=eror msg="can't read datasource provisioning files from directory" logger=provisioning.datasources path=/etc/grafana/provisioning/datasources error="open /etc/grafana/provisioning/datasources: no such file or directory"
+t=2020-09-01T00:08:39+0800 lvl=eror msg="Failed to read plugin provisioning files from directory" logger=provisioning.plugins path=/etc/grafana/provisioning/plugins error="open /etc/grafana/provisioning/plugins: no such file or directory"
+t=2020-09-01T00:08:39+0800 lvl=eror msg="Can't read alert notification provisioning files from directory" logger=provisioning.notifiers path=/etc/grafana/provisioning/notifiers error="open /etc/grafana/provisioning/notifiers: no such file or directory"
+t=2020-09-01T00:08:39+0800 lvl=eror msg="can't read dashboard provisioning files from directory" logger=provisioning.dashboard path=/etc/grafana/provisioning/dashboards error="open /etc/grafana/provisioning/dashboards: no such file or directory"
+t=2020-09-01T00:08:39+0800 lvl=info msg="Backend rendering via external http server" logger=rendering renderer=http
+t=2020-09-01T00:08:39+0800 lvl=info msg="HTTP Server Listen" logger=http.server address=[::]:3000 protocol=http subUrl= socket=
+t=2020-09-01T00:08:39+0800 lvl=info msg=Profiler logger=plugins.backend pluginId=grafana-googlesheets-datasource enabled=false
+t=2020-09-01T00:09:01+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=ok prev state=alerting
+t=2020-09-01T00:09:01+0800 lvl=info msg=Rendering logger=rendering renderer=http path="d-solo/9FQBljNMz/home-switches?orgId=1&panelId=12"
+t=2020-09-01T00:09:03+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:09:51+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=pending prev state=ok
+t=2020-09-01T00:10:11+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=alerting prev state=pending
+t=2020-09-01T00:10:11+0800 lvl=info msg=Rendering logger=rendering renderer=http path="d-solo/9FQBljNMz/home-switches?orgId=1&panelId=12"
+t=2020-09-01T00:10:12+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:10:12+0800 lvl=info msg="Creating Line notify" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:11:11+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=ok prev state=alerting
+t=2020-09-01T00:11:11+0800 lvl=info msg=Rendering logger=rendering renderer=http path="d-solo/9FQBljNMz/home-switches?orgId=1&panelId=12"
+t=2020-09-01T00:11:13+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:20:51+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=pending prev state=ok
+t=2020-09-01T00:21:01+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=ok prev state=pending
+t=2020-09-01T00:22:31+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=pending prev state=ok
+t=2020-09-01T00:22:51+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=ok prev state=pending
+t=2020-09-01T00:23:31+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=pending prev state=ok
+t=2020-09-01T00:23:51+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=alerting prev state=pending
+t=2020-09-01T00:23:51+0800 lvl=info msg=Rendering logger=rendering renderer=http path="d-solo/9FQBljNMz/home-switches?orgId=1&panelId=12"
+t=2020-09-01T00:23:52+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:23:52+0800 lvl=info msg="Creating Line notify" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:24:01+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=ok prev state=alerting
+t=2020-09-01T00:24:01+0800 lvl=info msg=Rendering logger=rendering renderer=http path="d-solo/9FQBljNMz/home-switches?orgId=1&panelId=12"
+t=2020-09-01T00:24:03+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:24:21+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=pending prev state=ok
+t=2020-09-01T00:24:41+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=ok prev state=pending
+t=2020-09-01T00:24:51+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=pending prev state=ok
+t=2020-09-01T00:25:11+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=ok prev state=pending
+t=2020-09-01T00:25:41+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=pending prev state=ok
+t=2020-09-01T00:26:01+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=ok prev state=pending
+t=2020-09-01T00:26:51+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=pending prev state=ok
+t=2020-09-01T00:27:01+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=ok prev state=pending
+t=2020-09-01T00:28:21+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=pending prev state=ok
+t=2020-09-01T00:28:41+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=alerting prev state=pending
+t=2020-09-01T00:28:41+0800 lvl=info msg=Rendering logger=rendering renderer=http path="d-solo/9FQBljNMz/home-switches?orgId=1&panelId=12"
+t=2020-09-01T00:28:43+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:28:43+0800 lvl=info msg="Creating Line notify" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:30:01+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=ok prev state=alerting
+t=2020-09-01T00:30:01+0800 lvl=info msg=Rendering logger=rendering renderer=http path="d-solo/9FQBljNMz/home-switches?orgId=1&panelId=12"
+t=2020-09-01T00:30:03+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:30:11+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=pending prev state=ok
+t=2020-09-01T00:30:31+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=alerting prev state=pending
+t=2020-09-01T00:30:31+0800 lvl=info msg=Rendering logger=rendering renderer=http path="d-solo/9FQBljNMz/home-switches?orgId=1&panelId=12"
+t=2020-09-01T00:30:33+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:30:33+0800 lvl=info msg="Creating Line notify" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:30:41+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=ok prev state=alerting
+t=2020-09-01T00:30:41+0800 lvl=info msg=Rendering logger=rendering renderer=http path="d-solo/9FQBljNMz/home-switches?orgId=1&panelId=12"
+t=2020-09-01T00:30:43+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:30:51+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=pending prev state=ok
+t=2020-09-01T00:31:01+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=ok prev state=pending
+t=2020-09-01T00:31:11+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=pending prev state=ok
+t=2020-09-01T00:31:31+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=alerting prev state=pending
+t=2020-09-01T00:31:31+0800 lvl=info msg=Rendering logger=rendering renderer=http path="d-solo/9FQBljNMz/home-switches?orgId=1&panelId=12"
+t=2020-09-01T00:31:33+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:31:33+0800 lvl=info msg="Creating Line notify" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:32:01+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=ok prev state=alerting
+t=2020-09-01T00:32:01+0800 lvl=info msg=Rendering logger=rendering renderer=http path="d-solo/9FQBljNMz/home-switches?orgId=1&panelId=12"
+t=2020-09-01T00:32:03+0800 lvl=info msg="Executing line notification" logger=alerting.notifier.line ruleId=3 notification=LINE
+t=2020-09-01T00:32:11+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=pending prev state=ok
+t=2020-09-01T00:32:21+0800 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=3 newState=ok prev state=pending
+t=2020-09-01T11:19:26+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=61.216.183.190 time_ms=0 size=29 referer=
+t=2020-09-01T11:20:18+0800 lvl=info msg="Successful Login" logger=http.server User=admin@localhost
+t=2020-09-01T11:53:23+0800 lvl=info msg="Successful Logout" logger=http.server User=admin@localhost
+t=2020-09-01T11:53:23+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/logout status=302 remote_addr=61.216.183.190 time_ms=4 size=29 referer=https://tunnels.hlchang.com:3333/dashboards
+t=2020-09-01T11:55:53+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=61.216.183.190 time_ms=0 size=29 referer=
+t=2020-09-01T11:56:02+0800 lvl=info msg="Successful Login" logger=http.server User=admin@localhost
+t=2020-09-01T22:06:05+0800 lvl=eror msg="Metric request error" logger=context userId=1 orgId=1 uname=admin error="rpc error: code = Canceled desc = context canceled" remote_addr=219.68.157.45
+t=2020-09-01T22:06:05+0800 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/ds/query status=500 remote_addr=219.68.157.45 time_ms=2092 size=34 referer="https://tunnels.hlchang.com:3000/d/9FQBljNMz/home-switches?orgId=1&refresh=10s"
+t=2020-09-01T22:13:27+0800 lvl=eror msg="Metric request error" logger=context userId=1 orgId=1 uname=admin error="rpc error: code = Canceled desc = context canceled" remote_addr=219.68.157.45
+t=2020-09-01T22:13:27+0800 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/ds/query status=500 remote_addr=219.68.157.45 time_ms=121 size=34 referer="https://tunnels.hlchang.com:3000/d/9FQBljNMz/home-switches?orgId=1&refresh=10s"
