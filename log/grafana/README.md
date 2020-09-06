@@ -1,1 +1,0 @@
-Grafana Logging Directory
