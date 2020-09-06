@@ -92,3 +92,4 @@ t=2020-09-06T16:03:50+0800 lvl=info msg="HTTP Server Listen" logger=http.server 
 t=2020-09-06T16:03:50+0800 lvl=info msg=Profiler logger=plugins.backend pluginId=grafana-googlesheets-datasource enabled=false
 t=2020-09-06T17:28:05+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/datasources status=302 remote_addr=219.68.157.45 time_ms=0 size=27 referer=
 t=2020-09-06T17:28:05+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=219.68.157.45 time_ms=0 size=32 referer=
+t=2020-09-06T22:20:54+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/d/3DSkvRDGz/variables-demo status=302 remote_addr=219.68.157.45 time_ms=0 size=32 referer=
