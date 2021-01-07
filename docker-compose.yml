@@ -16,6 +16,7 @@ services:
         volumes: 
             - ./etc/telegraf:/etc/telegraf
             - ./log/telegraf:/var/log/telegraf
+            - /var/run/docker.sock:/var/run/docker.sock
         environment: 
             TZ: Asia/Taipei
     influxdb:
