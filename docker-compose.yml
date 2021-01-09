@@ -46,7 +46,7 @@ services:
             - ./log/grafana:/var/log/grafana
         environment: 
             TZ: Asia/Taipei
-            GF_SERVER_DOMAIN: tunnel.hlchang.com
+            GF_SERVER_DOMAIN: tiunn.westus2.cloudapp.azure.com
             GF_SERVER_ROOT_URL: '%(protocol)s://%(domain)s:%(http_port)s/gf/'
             GF_SERVER_SERVE_FROM_SUB_PATH: 'true'
             GF_RENDERING_SERVER_URL: http://grafana-image:8081/render
@@ -68,6 +68,17 @@ services:
             - 8081
         restart: always
         environment: 
+            TZ: Asia/Taipei
+    loki:
+        container_name: loki
+        image: grafana/loki:latest
+        ports:
+            - "3100:3100"
+        restart: always
+        command: -config.file=/etc/loki/local-config.yaml
+        volumes:
+          - ./etc/loki:/etc/loki
+        environment:
             TZ: Asia/Taipei
     
 volumes: 
