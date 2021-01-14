@@ -2,6 +2,7 @@ version: "3.8"
 services:
     telegraf:
         container_name: telegraf
+        hostname: telegraf
         image: telegraf:latest
         #ports: 
         #    - "8125:8125"
@@ -21,6 +22,7 @@ services:
             TZ: Asia/Taipei
     influxdb:
         container_name: influxdb
+        hostname: influxdb
         image: influxdb:latest
         #ports: 
         #    - "8086:8086"
@@ -36,6 +38,7 @@ services:
             INFLUXDB_REPORTING_DISABLED: 'true'
     grafana:
         container_name: grafana
+        hostname: grafana
         image: grafana/grafana:latest
         ports: 
             - "3000:3000"
@@ -63,6 +66,7 @@ services:
             GF_SMTP_EHLO_IDENTITY:
     grafana-image:
         container_name: grafana-image
+        hostname: grafana-image
         image: grafana/grafana-image-renderer:latest
         ports: 
             - 8081
@@ -71,6 +75,7 @@ services:
             TZ: Asia/Taipei
     loki:
         container_name: loki
+        hostname: loki
         image: grafana/loki:latest
         ports:
             - "3100:3100"
@@ -80,9 +85,38 @@ services:
           - ./etc/loki:/etc/loki
         environment:
             TZ: Asia/Taipei
+    chronograf:
+        container_name: chronograf
+        hostname: chronograf
+        image: chronograf:latest
+        ports: 
+            - "8888:8888"
+        restart: always
+        volumes: 
+            - chronograf-data:/var/lib/chronograf
+            - ./etc/chronograf/chronograf:/etc/default/chronograf
+            - ./etc/chronograf/chronograf-v1.db:/etc/default/chronograf-v1.db
+        environment: 
+            TZ: Asia/Taipei
+            #GENERIC_CLIENT_ID: chronograf
+            #GENERIC_CLIENT_SECRET: dd7c6ce3-a621-456b-be04-3a50b810d4cb
+            #GENERIC_AUTH_URL: http://localhost:8080/auth/realms/Lab/protocol/openid-connect/auth
+            #GENERIC_TOKEN_URL: http://keycloak:8080/auth/realms/Lab/protocol/openid-connect/token
+            ##JWKS_URL: 
+            #GENERIC_API_URL: http://keycloak:8080/auth/realms/Lab/protocol/openid-connect/userinfo
+            ##GENERIC_API_KEY:
+            #GENERIC_SCOPES: openid
+            #PUBLIC_URL: http://localhost:8888
+            #USE_ID_TOKEN: 'false'
+            GH_CLIENT_ID: 797523efabed54ead817
+            GH_CLIENT_SECRET: 467cfaeedd7d8e548c816669272ddc2195901fd0
+            TOKEN_SECRET: "HAfWJYELo5Cr30VTiCnHLbEqwMknHi2i7acAhyWOxgMBqSUwA1HfEbxXKFx6evVT0qtTTthe16EraCcowFqzIGHpySdTtEr4TssAYTCio+oMG4C8ddF5JU0PrVCJF5SAGDPMka1jzg/vhs/J1FgypVTWDI/W2dyt2W8bIKqobGY1Z2sZkfxaQKd188RmTwF9KZEZSqzfsyPMzGsMDhKaBGQf2AGMNvsCy74GicUccw04x7FuHJrKV+11r3QOPjarFpw8laP4dDrJBml0OY69Rbu9bXo1NEJZdbOnqzpY8BcBP8gMlaqwLkK8UT6Q6vQMPRwNTQE4QO0cFtmBn1InYA==⏎"
+
     
 volumes: 
     influxdb-data:
         name: influxdb-data
     grafana-data:
         name: grafana-data
+    chronograf-data:
+        name: chronograf-data
