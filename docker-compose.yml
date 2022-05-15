@@ -24,8 +24,8 @@ services:
         container_name: influxdb
         hostname: influxdb
         image: arm64v8/influxdb:1.8
-        #ports: 
-        #    - "8086:8086"
+        ports: 
+            - "8086:8086"
         restart: always
         volumes: 
             - influxdb-data:/var/lib/influxdb
