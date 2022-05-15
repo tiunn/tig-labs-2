@@ -3,7 +3,7 @@ services:
     telegraf:
         container_name: telegraf
         hostname: telegraf
-        image: telegraf:latest
+        image: arm64v8/telegraf:latest
         #ports: 
         #    - "8125:8125"
         #    - "8092:8092"
@@ -23,7 +23,7 @@ services:
     influxdb:
         container_name: influxdb
         hostname: influxdb
-        image: influxdb:1.8
+        image: arm64v8/influxdb:1.8
         #ports: 
         #    - "8086:8086"
         restart: always
@@ -73,22 +73,22 @@ services:
         restart: always
         environment: 
             TZ: Asia/Taipei
-    loki:
-        container_name: loki
-        hostname: loki
-        image: grafana/loki:latest
-        ports:
-            - "3100:3100"
-        restart: always
-        command: -config.file=/etc/loki/local-config.yaml
-        volumes:
-          - ./etc/loki:/etc/loki
-        environment:
-            TZ: Asia/Taipei
+    #loki:
+        #container_name: loki
+        #hostname: loki
+        #image: grafana/loki:latest
+        #ports:
+        #    - "3100:3100"
+        #restart: always
+        #command: -config.file=/etc/loki/local-config.yaml
+        #volumes:
+        #  - ./etc/loki:/etc/loki
+        #environment:
+        #    TZ: Asia/Taipei
     chronograf:
         container_name: chronograf
         hostname: chronograf
-        image: chronograf:latest
+        image: arm64v8/chronograf:latest
         ports: 
             - "8888:8888"
         restart: always
